@@ -8,7 +8,7 @@ settings(
         organization := "org.irhawks",
         scalaVersion := "2.12.6",
         crossScalaVersions := Seq("2.12.6", "2.11.12"),
-        version      := "0.1.0-SNAPSHOT"
+        version      := "0.2.1"
         )),
     name := "siddhi-all",
     dependencyOverrides += "org.scala-lang.modules" % "scala-xml_2.12" % "1.1.0",
@@ -21,7 +21,8 @@ settings(
       "org.wso2.siddhi" % "siddhi-core" % "4.1.17",
       "org.wso2.siddhi" % "siddhi-query-api" % "4.1.17",
       "org.wso2.siddhi" % "siddhi-query-compiler" % "4.1.17",
-      "org.wso2.siddhi" % "siddhi-annotations" % "4.1.17"
+      "org.wso2.siddhi" % "siddhi-annotations" % "4.1.17",
+      "org.postgresql" % "postgresql" % "9.4-1206-jdbc42"
     ),
     libraryDependencies ++= Seq(
       "org.wso2.extension.siddhi.execution.string" % "siddhi-execution-string" % "4.0.11",
